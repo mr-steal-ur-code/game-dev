@@ -30,13 +30,13 @@ window.addEventListener('keydown' , (e) => {
 
 const theTank = {
     color: "black",
-    t:0,
-    u:0,
-    jump: function (t, u) {
-    this.t = this.t + t;
-    this.u = this.u + u;
-    cjsTank.style.top = `${this.u}px`; 
-    cjsTank.style.left = `${this.t}px`;  
+    x:0,
+    y:0,
+    jump: function (x, y) {
+    this.x = this.x + x;
+    this.y = this.y + y;
+    cjsTank.style.top = `${this.y}px`; 
+    cjsTank.style.left = `${this.x}px`;  
     }
 }
 
