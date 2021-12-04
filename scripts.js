@@ -1,10 +1,12 @@
 let cjsTank = document.querySelector('.tank');
-let moveBy = 10;
+let moveBy = 20;
 
-window.addEventListener('onload' , () => {
+
+window.addEventListener('load' , () => {
     cjsTank.style.position = 'absolute';
     cjsTank.style.left = 0;
     cjsTank.style.top = 0;
+    cjsTank.style.transition = ".15s";
 });
 
 window.addEventListener('keydown' , (e) => {
