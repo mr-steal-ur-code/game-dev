@@ -17,10 +17,10 @@ window.addEventListener('keydown' , (e) => {
             cjsTank.style.left = parseInt(cjsTank.style.left) + moveBy + 'px';
             break;
         case 38:
-            cjsTank.style.top = parseInt(cjsTank.style.left) - moveBy + 'px';
+            cjsTank.style.top = parseInt(cjsTank.style.top) - moveBy + 'px';
             break;
         case 40:
-            cjsTank.style.top = parseInt(cjsTank.style.left) + moveBy + 'px';
+            cjsTank.style.top = parseInt(cjsTank.style.top) + moveBy + 'px';
             break;
     }
 });
