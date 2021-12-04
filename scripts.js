@@ -8,18 +8,18 @@ window.addEventListener('onload' , () => {
 });
 
 window.addEventListener('keydown' , (e) => {
-    
+    console.log
     switch (e.key) {
-        case 37:
+        case 'ArrowLeft':
             cjsTank.style.left = parseInt(cjsTank.style.left) - moveBy + 'px';
             break;
-        case 39:
+        case 'ArrowRight':
             cjsTank.style.left = parseInt(cjsTank.style.left) + moveBy + 'px';
             break;
-        case 38:
+        case 'ArrowUp':
             cjsTank.style.top = parseInt(cjsTank.style.top) - moveBy + 'px';
             break;
-        case 40:
+        case 'ArrowDown':
             cjsTank.style.top = parseInt(cjsTank.style.top) + moveBy + 'px';
             break;
     }
