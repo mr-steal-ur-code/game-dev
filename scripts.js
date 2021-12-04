@@ -26,7 +26,7 @@ window.addEventListener('keydown' , (e) => {
             cjsTank.style.top = parseInt(cjsTank.style.top) + moveBy + 'px';
             break;
         }
-    })  
+      
 
 const theTank = {
     color: "black",
@@ -35,14 +35,11 @@ const theTank = {
     jump: function (x, y) {
     this.x = this.x + x;
     this.y = this.y + y;
-    cjsTank.style.top = `${this.y}px`; 
     cjsTank.style.left = `${this.x}px`;  
+    cjsTank.style.top = `${this.y}px`; 
     }
 }
-
-document.addEventListener("keyup", (event) => {
-      if (event.key === "j") {
-        theTank.jump(200, 0);
-      }
+    if (e.key === "j") {
+    theTank.jump(75, 75);
     }
-)
+})    
